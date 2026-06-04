@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 100;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    width: 90%;
+    margin: 25px 0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card-description{
+    margin-bottom: 20px;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card-info img{
+    vertical-align: -2px;
+}
+
+.card-info .price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.divider{
+    width: 100%;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+}
+
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid hsl(0, 0%, 100%);
+    vertical-align: middle;
+}
+
+strong{
+    color: hsl(0, 0%, 100%);
+}
+
+strong:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
